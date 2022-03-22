@@ -1,0 +1,16 @@
+﻿@page
+@using Common.Shared
+@inject NorthwindContext dbContext
+
+
+@{
+    var title = "Orders";
+    ViewData["Title"] = $"Northwind B2B {title}";
+}
+
+<div class="row">
+    <h1 class="display-2">@title</h1>
+    <p>
+        There are @dbContext.Orders.Count() orders in the Northwind Database.
+    </p>
+</div>
