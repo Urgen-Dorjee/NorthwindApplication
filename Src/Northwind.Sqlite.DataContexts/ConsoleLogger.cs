@@ -48,7 +48,7 @@ namespace Common.Shared
 
         public IDisposable BeginScope<TState>(TState state)
         {
-            return null;
+            return null!;
         }
     }
 

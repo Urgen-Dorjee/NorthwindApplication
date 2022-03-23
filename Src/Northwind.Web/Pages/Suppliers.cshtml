@@ -31,9 +31,9 @@
 <div class="row">
     <p>Enter details for a new supplier:</p>
     <form method="POST">
-        <div><input asp-for="Supplier.CompanyName" placeholder="Company Name" /></div>
-        <div><input asp-for="Supplier.Country" placeholder="Country" /></div>
-        <div><input asp-for="Supplier.Phone" placeholder="Phone" /></div>
+        <div><input asp-for="Supplier!.CompanyName" placeholder="Company Name" /></div>
+        <div><input asp-for="Supplier!.Country" placeholder="Country" /></div>
+        <div><input asp-for="Supplier!.Phone" placeholder="Phone" /></div>
         <input type="submit" />
     </form>
 </div>
